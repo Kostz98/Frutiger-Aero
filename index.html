@@ -75,7 +75,7 @@
   <p>
     Когда мы видим, что все сущее - это естественная ошибка, мы испытываем сладострастие, обвиняем, скорбим, восхваляем, и все остальное остается в прошлом, и это то, что нужно для того, чтобы быть изобретателем, верифицировать и, возможно, архитектурно описать биографию без объяснения причин.
   </p>
-  <a href="#" class="button" id="play-button">Подробнее</a>
+  <a href="#" class="button" id="play-button">Включить музыку</a>
 
   <img src="aero.gif" alt="GIF Image" class="gif-image">
 
@@ -88,9 +88,14 @@
     const music = document.getElementById('music');
 
     playButton.addEventListener('click', () => {
-      music.play();
+      if (music.paused) {
+        music.play();
+        playButton.innerHTML = 'Выключить музыку';
+      } else {
+        music.pause();
+        playButton.innerHTML = 'Включить музыку';
+      }
     });
   </script>
 </body>
 </html>
-
