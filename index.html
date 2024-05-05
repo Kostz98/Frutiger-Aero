@@ -15,6 +15,24 @@
       text-align: center;
       margin-top: 20px;
     }
+    
+    h2 {
+      font-size: small;
+      font-weight: normal;
+      text-align: center;
+      font-size: 22px;
+      top: 5px;  /* Уменьшено до 5px */
+      left: 10px;
+      width: 1000px;
+    }
+
+    h3 {
+      position: absolute;
+      top: 100px;
+      left: 10px;
+      width: 200px;
+      font-size: 12px;
+    }
 
     p {
       color: #000000;
@@ -42,11 +60,15 @@
     }
 
     .gif-image {
-      margin-left: 1000px;
+      position: fixed;
+      right: 20px;  /* Уменьшено до 20px */
+      top: 50%;
+      transform: translateY(-50%);
       width: 200px;
       height: 200px;
       animation: gif-animation 5s infinite;
     }
+
 
     @keyframes gif-animation {
       0% {
@@ -63,17 +85,22 @@
     audio {
       display: none;
     }
+
+    #play-button {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
   </style>
 </head>
 
 <body>
   <img src="profile-picture.jpg" alt="Profile Picture" class="profile-picture">
-  <h1>Веб-сайт Frutiger Aero</h1>
+  <h1>Веб-сайт Kostz</h1>
+  <h2>тема: Frutiger Aero</h2>
+  <h3>Основатель сайта</h3>
   <p>
-    Закон, по которому я должен жить, - это закон, который объединяет элиту. Меценат видит пустоту, но не видит смысла в лаореите. Никаких сложностей. Пеллентийский житель умер в тринадцатом веке, когда сенектус, нетус и самец были известны как турпис эгестас.
-  </p>
-  <p>
-    Когда мы видим, что все сущее - это естественная ошибка, мы испытываем сладострастие, обвиняем, скорбим, восхваляем, и все остальное остается в прошлом, и это то, что нужно для того, чтобы быть изобретателем, верифицировать и, возможно, архитектурно описать биографию без объяснения причин.
+    Тут будут мои проэкты.
   </p>
   <a href="#" class="button" id="play-button">Включить музыку</a>
 
